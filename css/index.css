@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body,
+p,
+table,
+div,
+section,
+img,
+span,
+table,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 22px;
+    line-height: 2.5em;
+}
+#hameburger-image{
+    display: none;
+}
+#greet-container{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    top:0;
+    left:0;
+    right:0;
+    height: 3rem;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(209, 202, 0);
+    color: #000;
+    font-weight: 600;
+}
+span{
+    vertical-align: middle;
+}
+#cross-button{
+    position: absolute;
+    border-radius: 25%;
+   cursor: pointer;
+    right: 0rem;
+}
+#header{
+    padding: 0.5rem 2rem 0 2rem;
+}
+
+#navbar
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.header-components{
+    padding:  0.5rem 1rem;
+    color:#fff;  
+    border-radius: 10px;  
+    font-size: 0.7rem;
+}
+.header-components:hover{
+    color:#000;
+    background-color:rgb(209, 202, 0);
+}
+.line{
+    background-color: #fff;
+    width: 92%;
+    opacity: 0.5;
+    margin: 0;
+    border: none;
+    height: 1px;
+    margin: auto
+}
+
+.header-text{
+        font-size: 2rem;
+        width: 50%;
+        float: left;
+        margin-top: 6rem;
+}
+.vpn-image{
+  
+    width: 40%;
+    float: right;
+    margin-top: 2rem;
+}
+#features-heading{
+    clear: both;
+    text-align: center;
+  
+    padding-top:4rem;
+    font-size: 2rem;
+    font-weight: 900
+}
+.features-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 3rem 0 ;
+    text-align: center;
+}
+ .features{
+     position: relative;
+ }
+ .features img{
+     width:10rem;
+     cursor: pointer;
+     padding:  0 1rem;
+ }
+ 
+ .feature-text,.review-text,.about-us-text {
+    
+     font-size: 0.7rem;
+     width:40%;
+     margin:auto;
+     line-height:1.5em;
+     margin-top:0.5rem;    
+ }
+ .feature-text{
+     width:70%
+ }
+#gallery{
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    perspective: 100px;
+}
+ #gallery-images{
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: baseline;
+    justify-content: space-around;
+    width: calc(220px*6);
+    animation: horizontalScroll 10s linear infinite alternate-reverse;
+ }
+ @keyframes horizontalScroll {
+     0%{
+         transform: translateX(0);
+     }
+     100%{
+         transform: translateX(calc(-220px*3));
+     }
+ } 
+  #gallery-images:hover{
+     animation-play-state: paused;
+ }
+ #gallery-title,#review-title,#about-us-title,#contact-title{
+    text-align: center;
+    padding:4rem 0;
+    font-size: 2rem;
+    font-weight: 900;
+ }
+ #gallery-images img{
+    width:10rem;
+    cursor: pointer;
+    margin:0 2rem;
+    transition: 1s;
+ }
+ #gallery-images img:hover{
+   transform: translateZ(30px);
+   width: 11rem;
+ }
+ .review-content{
+     text-align: center;
+ }
+ .review-text{
+     text-align: left;
+ }
+.user-name{
+  
+    margin: 1rem 0 0 -18rem
+}
+.user-image{
+margin-right:0.5rem
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.ratings span{
+    margin-right:1rem
+}
+.outer-progressbar{
+    width: 10rem;
+    background-color:#fbfbfb;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.inner-progressbar{
+    width: 8rem;
+    background-color:#3deb34;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.inner-progressbar2{
+    width: 4rem;
+    background-color:#3deb34;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.inner-progressbar3{
+    width: 3rem;
+    background-color:#3deb34;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.inner-progressbar4{
+    width: 1rem;
+    background-color:#3deb34;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.inner-progressbar5{
+    width: 2rem;
+    background-color:#3deb34;
+    height: 0.5rem;
+    border-radius: 10px
+}
+.contact-images{
+    text-align: center;
+}
+.icons{
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    width:2rem;
+    margin: 0 0.5rem
+}
+#contact-title,#about-us-title{
+    padding: 2rem 0 ;
+}
+#footer-text{
+    font-size: 0.5rem;
+    text-align: center;
+
+}
+
+#background-change{
+    background-color: rgb(209, 202, 0);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+   border: none;
+   outline: none;
+}
+@media screen and (max-width: 1300px) {
+    html{
+        font-size: 18px;
+        line-height: 2em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    html{
+        font-size: 16px;
+        line-height: 2em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html{
+        font-size: 16px;
+        line-height: 2em;
+    }
+   
+    .header-text{
+        display: none;
+    }
+    #vpn-image-container{
+        text-align: center;
+    }
+    .vpn-image{
+        float: none;  
+    }
+    .user-name{
+        margin-left: -11rem;
+    }
+    #hameburger-image{
+        display: block;
+    }
+    #hameburger-image img{
+        width: 2.5rem;
+        border-radius: 50%;
+        background-color:#fff
+    }
+    #navbar-left{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color:rgba(0,0,0,0.7);
+        right: 0;
+        margin-top: 0rem;
+        transition: 1s;
+        margin-right:-6rem;
+    }
+   
+
+
+}
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 10px;
+        line-height: 0.5em;
+    }
+}
